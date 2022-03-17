@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+
+.App-cont {
+  font-family: "Inter", sans-serif;
+  background-color: #f7fafc;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.App-webs {
+  height: 100%;
+}
+
+.App-dale {
+  width: 100%;
+  display: flex;
+  padding-left: 10%;
+  padding-top: 141px;
+  flex-direction: column;
+}
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 136.02%;
+  color: #27272e;
+}
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.02%;
+  color: #27272e;
+  margin-top: 12px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 162.02%;
+  color: #425466;
+  margin-bottom: 30px;
+}
+.App-label {
+  display: flex;
+  flex-direction: column;
+  font-style: bold;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 162.02%;
+  color: #425466;
+}
+input {
+  width: 80%;
+  height: 46px;
+  background: #ffffff;
+  /* Input/Default */
+
+  box-shadow: 0px 1px 2px rgba(50, 50, 71, 0.08),
+    0px 0px 1px rgba(50, 50, 71, 0.2);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  text-indent: 10px;
+}
+.App-charadinha {
+  display: none;
+  flex-direction: column;
+}
+button {
+  background-color: #97a7ec;
+  color: white;
+  margin-left: 30%;
+  border: none;
+  border-radius: 50px;
+  width: 196px;
+  height: 46px;
+}
+button:hover {
+  background-color: #3754db;
+}
+button:active {
+  background-color: #3754db;
+  transform: scale(1.05);
+}
+
+article {
+  position: relative;
+  width: 73.43px;
+  height: 55px;
+  left: 0.5px;
+  margin: 2px;
+  border: 2px solid #e6e9ef;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 4px rgba(117, 42, 211, 0.2);
+  border-radius: 6px;
+}
+article div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  background-color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #5b5b5b;
+}
+article input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  opacity: 0;
+  cursor: pointer;
+}
+.App-mark:checked ~ div {
+  background-color: #3754db;
+  color: white;
+}
+.App-charadinha-segundo {
+  padding-top: 1px;
+  padding-bottom: 20px;
+  flex-direction: row;
+  display: flex;
+}
+.App-saídera {
+  width: 80%;
+  height: 210px;
+  border: 1px solid #e7f0fd;
+  box-sizing: border-box;
+  /* Shadow/shadow-sm */
+
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+  border-radius: 16px;
+  text-indent: 10px;
+  padding-top: 25px;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+.App-icon {
+  width: 32px;
+  height: 32px;
+}
+.App-saídera label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.App-saídera label input {
+  width: 20%;
+  height: 36px;
+}
+.App-minbox {
+  margin-left: 134px;
+}
+.App-minbox2 {
+  margin-left: 30px;
+}
+.App-avante {
+  display: flex;
+  justify-content: end;
+}
+.App-avante button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 86px;
+  height: 26px;
+  background-color: #e1e8ff;
+  border-radius: 4px;
+  color: #4c6fff;
+  margin: 0 30px 0 0;
+}
