@@ -17,7 +17,7 @@ function App() {
         <h1>Diário de Saúde</h1>
         <p>Crie o seu relatório diário de saúde</p>
         {!Loading?
-        <form onSubmit={Lod}>
+        <form onSubmit={Lod} onSubmit={MyFunction}>
           <label>
             Nome completo
             <input id="name"></input>
