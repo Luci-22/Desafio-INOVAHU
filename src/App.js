@@ -1,9 +1,13 @@
+import React, { useState } from "react";
 import icon2 from "./icon-medics.svg";
 import icon from "./icon-medic.svg";
 import logo from "./webCleAside.png";
 import "./App.css";
-import { blurblur } from "./blur";
+import MyFunction from "./blur";
+import Lod from "./load";
+import { Spinner } from "react-awesome-spinners";
 function App() {
+  const [Loading, setLoading] = useState(false)
   return (
     <div className="App-cont">
       <aside>
@@ -12,7 +16,8 @@ function App() {
       <div className="App-dale">
         <h1>Diário de Saúde</h1>
         <p>Crie o seu relatório diário de saúde</p>
-        <form>
+        {!Loading?
+        <form onSubmit={Lod}>
           <label>
             Nome completo
             <input id="name"></input>
@@ -23,7 +28,7 @@ function App() {
           </label>
           <label className="App-label">
             Para qual dia você deseja gerar o gráfico de saúde?
-            <input className="Batman" placeholder="dd/mm/aaaa" onBlur={blurblur} ></input>
+            <input className="Batman" placeholder="dd/mm/aaaa"></input>
           </label>
           <div className="App-charadinha">
             <label>Selecione a hora preencher os dados</label>
@@ -83,8 +88,9 @@ function App() {
               </div>
             </div>
           </div>
-          <button>Gerar Diário de Saúde</button>
-        </form>
+          <button onClick={() =>{setLoading(true)}}>Gerar Diário de Saúde</button>
+        </form>:Spinner
+}
       </div>
     </div>
   );

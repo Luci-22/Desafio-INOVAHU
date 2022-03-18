@@ -71,7 +71,7 @@ input {
   text-indent: 10px;
 }
 .App-charadinha {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 button {

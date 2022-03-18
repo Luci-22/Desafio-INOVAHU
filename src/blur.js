@@ -1,5 +1,3 @@
-export function blurblur () {
-    if(document.querySelector('.Batman').value == "a"){
-            console.log("salve")
-    }
-}
+export default function MyFunction(evento){
+    evento.preventDefault();
+    } 
